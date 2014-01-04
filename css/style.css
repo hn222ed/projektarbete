@@ -1,0 +1,152 @@
+#container {max-width: 960px; 
+            margin-left: auto;
+            margin-right: auto;
+            overflow: auto;}
+            
+#header {border-bottom: solid 3px;
+        margin: 15px;
+        height: 140px;
+        text-align: center;}
+        
+#header img {margin: 1px;
+            float: right;
+            max-width: 100%;}
+
+#navigation {width: 150px;
+            margin: 15px;
+            border: 1px solid;
+            float: left;}
+            
+#navigation a.active {background-color: #EBEBFF;}
+            
+#content {max-width:745px;
+        float: left;
+        margin-bottom: 30px;
+        overflow:auto;}
+        
+#footer {border: 1px solid;
+        max-width: 960px;}
+        
+.blogpost h3 {background:url(../css/pics/logga.png) no-repeat;
+padding-left: 30px; padding-bottom: 10px;}
+
+.blogpost .right {width: 250px;
+                height: 300px;
+                float: right;
+                margin-left: 15px;}
+                
+.blogpost img {width: 500px; 
+                height: 335px;
+                border: 1px solid;}
+        
+/*Rubriker och listor*/
+
+h1 {font-family: "Chaparral Pro Light", "Arial Light", sans-serif;
+    font-size: 4em;}
+    
+h2 {font-family: "Georgia", "Arial light", sans-serif; 
+    font-size: 1,8em;
+    background-color: #C2C2FF;
+    color: #000000;}
+    
+h3 {font-family: "Georgia", sans-serif;
+    font-size: 1.2em;}
+    
+p {font-family: "Garamond", sans-serif;
+    font-size: 1em;}
+
+ul {font-family: "Garamond", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;}
+
+dl {font-family: "Garamond", sans-serif;
+    font-size: 1em;}
+
+/*Tabell laborationssidan*/
+
+th {font-family: "Garamond", sans-serif;
+    font-size: 1em;
+    font-style: oblique;}
+
+td {font-family: "Garamond", sans-serif;
+    font-size: 1em;}   
+    
+table {border-color: #C2C2FF;
+        background-color: #EBEBFF;
+        width: 450px;}
+
+.hide {display: none;}
+  
+/*Meny, Navigation*/  
+
+#navigation a {display: block;
+        width: 130px;
+        padding: 10px;
+        background-color: #7A7ACC;
+        background-image:url(pics/sprite.png);
+        background-repeat: no-repeat;
+        margin: 0;
+        border-bottom: 1px solid;}
+        
+#navigation ul {list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 150px;}
+    
+#navigation li {text-align: center;
+    list-style-type: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;}
+    
+#navigation li a:hover {color: #000000;
+            /*background-color: #7A7ACC;*/}
+            
+/*Färger länkar*/
+
+a:link {color: blue;
+        font-style: bold;}
+        
+a:visited {color: purple;
+            font-style: bold;}
+            
+a:focus {color: orange;}
+
+a:hover {color: black;
+        background-color:#C2C2FF;}
+        
+a:active {color: #C2C2FF;}
+
+/*Sprites*/
+
+#start-icon {display: block; 
+            float: left;
+            background-position: 0 -38px;
+            }
+            
+#start-icon:hover {background-position: 0 10px;}
+
+#lab-icon {display: block;
+            float: left;
+            background-position:0 -134px;}
+            
+#lab-icon:hover {background-position:0 -86px;}
+
+#pres-icon {display: block;
+            float: left;
+            background-position: 0 -230px;}
+            
+#pres-icon:hover {background-position: 0 -182px;}
+
+#contact-icon {display: block;
+                float: left;
+                background-position: 0 -326px;}
+            
+#contact-icon:hover {background-position: 0 -278px;}
+
+/*Omvandlare*/
+
+#omvandlare {width: 500px;
+            margin: auto;
+            float: left;}
