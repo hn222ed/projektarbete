@@ -1,6 +1,6 @@
 
 var imageSlider = document.getElementById("imageslider");
-var pic = ["http://www.imagenestop.com/anime1/anime-jpg-76153.jpg", "http://upload.wikimedia.org/wikipedia/commons/4/4b/Europa-bei-nacht_1-1024x768.jpg", "http://upload.wikimedia.org/wikipedia/commons/d/db/Nil_in_Luxor,_1995_(1,_1024x768).jpg"];
+var pic = ["arc_photos/DSC04400.jpg", "arc_photos/DSC04405.jpg", "arc_photos/DSC04409.jpg", "arc_photos/DSC04412.jpg", "arc_photos/DSC04413-2.jpg"];
 var counter = 0;
 var displayPic;
 
