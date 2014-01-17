@@ -55,6 +55,78 @@
             height: 500px;
             margin-top: 15px;
 }
+
+/*Illustrationer*/
+
+/*
+#image1 {width: 500px;
+        height: 700px;
+        float: left;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;}
+        
+#image2 {width: 440px;
+        height: 700px;
+        float: right;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;}
+        
+#image3 {width: 440px;
+        height: 700px;
+        float: right;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;}
+*/
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   2px;
+   -moz-column-count:    5;
+   -moz-column-gap:      2px;
+   column-count:         5;
+   column-gap:           2px;
+   
+}
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 9600px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 760px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 560px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 360px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
         
 /*Rubriker och listor*/
 
@@ -126,3 +198,55 @@ a:focus {color: #FF3333;}
 a:hover {color: #888888;}
         
 a:active {color: #FF3333;}
+
+@media print {
+/*Vi har medvetet valt att inte ha med bilderna i printformat på grund av upphovsrättsliga skäl. Det ska inte gå att skriva ut motiven och använda de hemma på väggarna utan Terese tillstånd*/          
+h1, h2, h3 { 
+    font-family:Georgia, Times, serif;
+    font-size: 12pt;
+    color:#000000;}
+p   {
+    font-family:Georgia, Times, serif;
+    font-size: 10pt;
+    color:#000000;}
+    
+ul, ol, dl { 
+    font-family:Georgia, Times, serif; 
+    font-size: 10pt;
+    color:#000000;}
+#menu {display:none;
+            border:0;
+            }
+            
+#container {float:none;
+            border:none;
+            }
+            
+#body { 
+    font-family: Georgia, Times, serif; 
+    font-size: 10pt;
+    border:none;
+    color:#000000;
+        }
+#image {
+    display:inline;
+}        
+#content {  
+    font-family: Georgia, Times, serif;
+    font-size: 10pt;
+    border:0;
+    width:600px;
+    color:#000000;}
+            
+#content a:after {
+    content: " (" attr(href) ")";
+}
+            
+#header {border:0;
+        margin:0;
+        padding:0;}
+        
+#footer p { border:0;
+           }
+            
+} 
