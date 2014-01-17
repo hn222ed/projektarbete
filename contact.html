@@ -24,10 +24,10 @@
 
 
 <div id="content">
- <div id= "about"> </div>
-<h2>Contact</h2>
-<h3>Please ask questions and give feedback on the website</h3>
+
 <p>To contact Terese Elina Jansson or to give feedback on the website please fill in the form below</p>
+
+<div id="formbackgroundimage"></div>
 
 <div id="form">
 <form method="get" action="thanks.html">
@@ -41,55 +41,56 @@
 <fieldset>
 <legend>Type of message</legend>
 <select name="kategori">
-       		<option>What is your message about:</option>
-       		<option>Illustrations</option>
-       		<option>Architecture</option>
-       		<option>Jobs</option>
-       		<option>Feedback</option>
-       		<option>Other</option>
-     	</select>
+                       <option>What is your message about:</option>
+                       <option>Illustrations</option>
+                       <option>Architecture</option>
+                       <option>Jobs</option>
+                       <option>Feedback</option>
+                       <option>Other</option>
+             </select>
 <br/>
 </fieldset>
 <fieldset>
 <legend>Message details</legend>
 <select name="vad">
-       		<option>More specific</option>
-		<optgroup label="Sales">
-       		<option>Prices</option>
-       		<option>Order</option>
-		</optgroup>
-		<optgroup label="Portfolio">
-       		<option>CV</option>
-       		<option>Projects</option>
-       		<option>Upcoming</option>
-		</optgroup>
-		<optgroup label="General">
-       		<option>Tips and recommendations</option>
-       		<option>Feedback</option>
-       		<option>Photos</option>
+                       <option>More specific</option>
+                <optgroup label="Sales">
+                       <option>Prices</option>
+                       <option>Order</option>
+                </optgroup>
+                <optgroup label="Portfolio">
+                       <option>CV</option>
+                       <option>Projects</option>
+                       <option>Upcoming</option>
+                </optgroup>
+                <optgroup label="General">
+                       <option>Tips and recommendations</option>
+                       <option>Feedback</option>
+                       <option>Photos</option>
             <option>International</option>
-		</optgroup>
-     	</select>
-     	</fieldset>
-	<br/>
-	<label for="mobil">Message:</label> <br/>
+                </optgroup>
+             </select>
+             </fieldset>
+        <br/>
+        <label for="mobil">Message:</label> <br/>
 <textarea name="meddelande" id="meddelande" rows="5" cols="45">
 </textarea> <br/>
 <label>Did you find this website inspiring?</label>
 <br />
 <input type="radio" name="fika" id="yes" value="yes" checked="checked"/>
-	<label for="yes">Yes!</label>
-    		
+        <label for="yes">Yes!</label>
+                    
             <br/>
             <input type="radio" name="fika" id="no" value="no"/>
-	<label for="no">No, improvments can be made</label>     
-   			
+        <label for="no">No, improvments can be made</label>     
+                           
 <br />
-<input type="submit" value="Send"/>
+<input id="submit" type="submit" value="Send"/>
 
 </form>
 </div>
 </div>
 </div>
+<script type="text/javascript" src="form.js"></script>
 </body>
 </html>
