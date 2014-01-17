@@ -39,7 +39,10 @@
         height: 500px;
         float: right;
         }
-        
+#thanks {
+    font-family:"Garamond", "Georgia", sans-serif; 
+    width:400px;
+}        
 #thanksimage {
     background:url(../photos/SCAN0003.jpg) no-repeat;
     width: 500px; 
