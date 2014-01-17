@@ -1,3 +1,4 @@
+/*Översiktlig layout*/
 #container {max-width: 960px; 
             margin-left: auto;
             margin-right: auto;
@@ -21,17 +22,18 @@
         
 #footer {margin-left: auto;
         margin-right: auto;
-        max-width: 960px;
-        font-size: 0.8em;}
+        max-width: 960px;}
         
-#about {background:url(../photos/terese.jpg) no-repeat;
-        width: 375px; 
-        height: 500px;
+#footer p {font-size: 80%;
+            float: right;}
+        
+#about {background:url(../photos/index.png) no-repeat;
+        width: 400px; 
+        height: 524px;
         float: right;}
 #form {
     font-family:"Garamond", "Georgia", sans-serif; 
-    width:400px;
-}
+    width:400px;}
 
 #formbackgroundimage {
    background:url(../photos/SCAN0006.jpg) no-repeat;
@@ -39,50 +41,26 @@
         height: 500px;
         float: right;
         }
+        
 #thanks {
     font-family:"Garamond", "Georgia", sans-serif; 
     width:400px;
 }        
 #thanksimage {
-    background:url(../photos/SCAN0003.jpg) no-repeat;
+    background:url(../photos/terese.jpg) no-repeat;
     width: 500px; 
     height: 500px;
     float: right;
         }
 
 
-.imageslider {width:700px;
+#imageslider {width:700px;
             height: 500px;
-            margin-top: 15px;
-}
+            margin-top: 15px;}
 
 /*Illustrationer*/
 
-/*
-#image1 {width: 500px;
-        height: 700px;
-        float: left;
-        margin-top: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;}
-        
-#image2 {width: 440px;
-        height: 700px;
-        float: right;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-bottom: 10px;}
-        
-#image3 {width: 440px;
-        height: 700px;
-        float: right;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-bottom: 10px;}
-*/
-
 #photos {
-   /* Prevent vertical gaps */
    line-height: 0;
    
    -webkit-column-count: 5;
@@ -94,7 +72,6 @@
    
 }
 #photos img {
-  /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
 }
@@ -130,26 +107,20 @@
         
 /*Rubriker och listor*/
 
-h1 {font-family: "Bodoni MT", "Chaparral Pro Light", sans-serif;
-    font-size: 600%;}
-    
 h2 {font-family: "Georgia", "Arial light", sans-serif; 
-    font-size: 1,8em;
-    color: #000000;}
+    font-size: 200%;
+    color: #000;}
     
 h3 {font-family: "Georgia", sans-serif;
-    font-size: 1.2em;}
+    font-size: 175%;}
     
 p {font-family: "Garamond", sans-serif;
     font-size: 150%;}
 
 ul {font-family: "Garamond", sans-serif;
-    font-size: 1em;
+    font-size: 100%;
     margin: 0;
     padding: 0;}
-
-dl {font-family: "Garamond", sans-serif;
-    font-size: 1em;}
   
 /*Meny, Navigation*/  
 
@@ -158,7 +129,7 @@ dl {font-family: "Garamond", sans-serif;
  padding:0px;
  text-transform:uppercase; /*Gör bokstäver stora*/
  font-family: "FuturaCondensedMediumMedium", sans-serif;
- font-style: bold;
+ font-weight: bold;
  font-size: 150%;
  }
 
@@ -177,7 +148,7 @@ dl {font-family: "Garamond", sans-serif;
  }
 
 #menu a{
- color:#000000;
+ color:#000;
  text-decoration: none;
  }
 
@@ -187,11 +158,11 @@ dl {font-family: "Garamond", sans-serif;
             
 /*Färger länkar*/
 
-a:link {color: #00000;
-        font-style: bold;}
+a:link {color: #000;
+        font-weight: bold;}
         
 a:visited {color: #888888;
-            font-style: bold;}
+            font-weight: bold;}
             
 a:focus {color: #FF3333;}
 
@@ -199,36 +170,37 @@ a:hover {color: #888888;}
         
 a:active {color: #FF3333;}
 
+/*Utskriftsinställningar*/
+
 @media print {
-/*Vi har medvetet valt att inte ha med bilderna i printformat på grund av upphovsrättsliga skäl. Det ska inte gå att skriva ut motiven och använda de hemma på väggarna utan Terese tillstånd*/          
+          
 h1, h2, h3 { 
     font-family:Georgia, Times, serif;
     font-size: 12pt;
-    color:#000000;}
+    color:#000;}
 p   {
     font-family:Georgia, Times, serif;
     font-size: 10pt;
-    color:#000000;}
+    color:#000;}
     
 ul, ol, dl { 
     font-family:Georgia, Times, serif; 
     font-size: 10pt;
-    color:#000000;}
+    color:#000;}
+    
 #menu {display:none;
-            border:0;
             }
             
 #container {float:none;
-            border:none;
             }
             
 #body { 
     font-family: Georgia, Times, serif; 
     font-size: 10pt;
-    border:none;
-    color:#000000;
+    color:#000;
         }
-#image {
+        
+#photos {
     display:inline;
 }        
 #content {  
@@ -236,7 +208,7 @@ ul, ol, dl {
     font-size: 10pt;
     border:0;
     width:600px;
-    color:#000000;}
+    color:#000;}
             
 #content a:after {
     content: " (" attr(href) ")";
