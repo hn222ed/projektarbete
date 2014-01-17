@@ -25,18 +25,19 @@
         max-width: 960px;}
         
 #footer p {font-size: 80%;
-            float: right;}
+            float: left;}
         
-#about {background:url(../photos/index.png) no-repeat;
-        width: 400px; 
-        height: 524px;
+#about {background:url(../photos/Illustrationer/index.png) no-repeat;
+        width: 186px; 
+        height: 480px;
         float: right;}
+        
 #form {
     font-family:"Garamond", "Georgia", sans-serif; 
     width:400px;}
 
 #formbackgroundimage {
-   background:url(../photos/SCAN0006.jpg) no-repeat;
+   background:url(../photos/Illustrationer/SCAN0006.jpg) no-repeat;
         width: 500px; 
         height: 500px;
         float: right;
@@ -47,16 +48,17 @@
     width:400px;
 }        
 #thanksimage {
-    background:url(../photos/terese.jpg) no-repeat;
+    background:url(../photos/Illustrationer/SCAN0004.jpg) no-repeat;
     width: 500px; 
     height: 500px;
     float: right;
         }
 
 
-#imageslider {width:700px;
-            height: 500px;
-            margin-top: 15px;}
+#imageslider {width:600px;
+            height: 500px;}
+            
+
 
 /*Illustrationer*/
 
@@ -106,8 +108,13 @@
 }
         
 /*Rubriker och listor*/
+h1 {
+    font-family:"FuturaCondensedMediumMedium", "Times New Roman", sans-serif;
+    font-size: 225%;
+    color:#ff9933;
+}
 
-h2 {font-family: "Georgia", "Arial light", sans-serif; 
+h2 {font-family: "Georgia", "Times New Roman", sans-serif; 
     font-size: 200%;
     color: #000;}
     
@@ -134,7 +141,6 @@ ul {font-family: "Garamond", sans-serif;
  }
 
 #menu ul {
- 
  margin:0px;
  padding:0px;
  text-align:center;
@@ -154,21 +160,22 @@ ul {font-family: "Garamond", sans-serif;
 
 #menu a:hover{
  color:#888888;}
+ 
+#menu .active a {
+ color:#FF9933;}
+
     
             
 /*Färger länkar*/
 
-a:link {color: #000;
-        font-weight: bold;}
+a:link {color: #000;}
         
-a:visited {color: #888888;
+a:visited {color: #FF9933;
             font-weight: bold;}
             
-a:focus {color: #FF3333;}
+a:focus {color: #FF9933;}
 
 a:hover {color: #888888;}
-        
-a:active {color: #FF3333;}
 
 /*Utskriftsinställningar*/
 
@@ -202,23 +209,27 @@ ul, ol, dl {
         
 #photos {
     display:inline;
-}        
+} 
+#formbackgroundimage{
+    width:100px;
+    height:100px;
+}
 #content {  
     font-family: Georgia, Times, serif;
     font-size: 10pt;
     border:0;
-    width:600px;
+    width:650px;
     color:#000;}
             
 #content a:after {
     content: " (" attr(href) ")";
 }
             
-#header {border:0;
-        margin:0;
-        padding:0;}
+#header img {
+    margin:0;
+    padding:0;
+    width:400px;
+    height:200px;}
         
-#footer p { border:0;
-           }
             
 } 

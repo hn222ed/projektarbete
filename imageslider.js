@@ -1,6 +1,5 @@
-
 var imageSlider = document.getElementById("imageslider");
-var pic = ["arc_photos/DSC04400.jpg", "arc_photos/DSC04405.jpg", "arc_photos/DSC04409.jpg", "arc_photos/DSC04412.jpg", "arc_photos/DSC04413-2.jpg"];
+var pic = ["arc_photos/DSC03932.jpg", "arc_photos/DSC03945.jpg", "arc_photos/DSC03951.jpg", "arc_photos/DSC03957.jpg", "arc_photos/DSC03966.jpg"];
 var counter = 0;
 var displayPic;
 
